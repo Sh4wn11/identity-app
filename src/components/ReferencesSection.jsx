@@ -51,7 +51,7 @@ const REFERENCES_CONFIG = {
   content: {
     title: 'References',
     subtitle:
-      'Research References',
+      'Images: People illustrations by Storyset (https://storyset.com/).',
     entries: [
       {
         id: 'marcia-1966',
