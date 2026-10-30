@@ -1,0 +1,22 @@
+﻿import Hero from './components/Hero';
+import StatusCard from './components/StatusCard';
+import { identityStatuses } from './components/DataFile';
+
+export default function App() {
+  return (
+    <main className="min-h-screen bg-gray-50 text-gray-900 dark:bg-gray-950 dark:text-white">
+      <Hero />
+
+      <section
+        id="explore"
+        className="mx-auto max-w-7xl px-6 py-16 sm:px-12 lg:px-16"
+      >
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+          {identityStatuses.map((status) => (
+            <StatusCard key={status.id} status={status} />
+          ))}
+        </div>
+      </section>
+    </main>
+  );
+}

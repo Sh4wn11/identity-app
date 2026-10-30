@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Identity Status Color Palette */
+  --color-diffusion: #9ca3af;
+  --color-moratorium: #fbbf24;
+  --color-foreclosure: #2563eb;
+  --color-achievement: #10b981;
+
+  /* Primary Background Colors */
+  --color-bg-light: #ffffff;
+  --color-bg-dark: #1f2937;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@keyframes sketchIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.9) rotate(-2deg);
+        stroke-dashoffset: 100;
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) rotate(0deg);
+        stroke-dashoffset: 0;
+    }
+}
+
+.animate-sketch {
+    animation: sketchIn 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
