@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import Hero from './components/Hero';
-import DiffusionSection from './components/diffusionSection';
+import DiffusionSection from './components/DiffusionSection';
 import MoratoriumSection from './components/MoratoriumSection';
 import ForeclosureSection from './components/ForeclosureSection';
 import AchievementSection from './components/AchievementSection';
